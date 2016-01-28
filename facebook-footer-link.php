@@ -16,3 +16,8 @@ require_once(plugin_dir_path(__FILE__).'includes/facebook-footer-link-scripts.ph
 
 //load Content
 require_once(plugin_dir_path(__FILE__).'includes/facebook-footer-link-content.php');
+
+if(is_admin()){
+    //load Settings
+    require_once(plugin_dir_path(__FILE__).'includes/facebook-footer-link-settings.php');
+}
